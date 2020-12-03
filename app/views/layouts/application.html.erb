@@ -13,7 +13,7 @@
 <% if user_signed_in? %>  
           <div class="btn btn--orange btn--radius">
             <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-            <%= link_to "投稿する", "/tweet/new", class: "post" %>
+            <%= link_to "投稿する", "/tweets/new", class: "post" %>
           </div>
         <% else %>
           <div class="btn btn--orange btn--radius">

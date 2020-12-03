@@ -3,7 +3,7 @@
   <div class = tweet>
       <div class =write >
         <p><%= tweet.name %>---<%= tweet.created_at%></p>
-        <p><%= tweet.text %>---<%link_to '詳細', "/tweets/#{tweet.id}", mehod: :get%></p>
+        <p><%= tweet.text %>---<%=link_to '詳細', "/tweets/#{tweet.id}", mehod: :get%></p>
     </div>
 
            <% if user_signed_in? && current_user.id == tweet.user_id %>
