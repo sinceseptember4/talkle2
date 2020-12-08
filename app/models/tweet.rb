@@ -1,4 +1,5 @@
 class Tweet < ApplicationRecord
-    belongs_to :user
-    has_many :commnets
+  belongs_to :user
+  has_many :comments               #commentsテーブルとのアソシエーション
+
 end

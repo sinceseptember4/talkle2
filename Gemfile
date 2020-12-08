@@ -62,3 +62,13 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem'kaminari'
+gem 'pry-rails'
+gem 'devise'
+gem 'therubyracer'
+gem 'twitter-bootstrap-rails'
+gem 'bootstrap-material-design', '0.1.4'
+gem 'jquery-rails'
+gem "font-awesome-rails"
+group :production do
+  gem 'rails_12factor'
+end
