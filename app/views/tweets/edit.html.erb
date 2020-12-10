@@ -1,0 +1,11 @@
+ <div class = space></div>
+ <%= form_tag("/tweets/#{@tweet.id}", method: :patch ) do %>
+ <div class = las>
+    <h3>
+      編集する
+    </h3>
+    <textarea name="text" placeholder="text"><%= @tweet.name %></textarea>
+    <textarea name="text" placeholder="text"><%= @tweet.text %></textarea>
+    <input type="submit" value="SEND">
+    </div>
+  <% end %>

@@ -1,0 +1,18 @@
+[33mcommit 2ff4aa85a3f736de2ad2eab8c007508c0f2af016[m[33m ([m[1;36mHEAD[m[33m, [m[1;35mrefs/stash[m[33m)[m
+Merge: a5950cf 69a773d
+Author: EC2 Default User <ec2-user@ip-172-31-13-104.ap-northeast-1.compute.internal>
+Date:   Thu Dec 10 11:08:00 2020 +0000
+
+    WIP on (no branch): a5950cf first commit
+
+[33mcommit 69a773dceeadfda47ef10d10c9c4897d1aedb3ea[m
+Author: EC2 Default User <ec2-user@ip-172-31-13-104.ap-northeast-1.compute.internal>
+Date:   Thu Dec 10 11:08:00 2020 +0000
+
+    index on (no branch): a5950cf first commit
+
+[33mcommit a5950cfa2484a57612001aa95e01a13168ea3a8b[m
+Author: EC2 Default User <ec2-user@ip-172-31-13-104.ap-northeast-1.compute.internal>
+Date:   Thu Dec 3 09:40:39 2020 +0000
+
+    first commit

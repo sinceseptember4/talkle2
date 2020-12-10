@@ -1,0 +1,23 @@
+
+  <div class = tweet>
+      <div class =write >
+        <p><%= @tweet.name %>---<%= @tweet.created_at%></p>
+        <p><%= @tweet.text %></p>
+    </div>
+    </div>
+  <h4>＜コメント一覧＞</h4>
+
+        <% @comments.each do |comment| %>
+          
+        <p><%= comment.text %></p>
+        <% end %>
+ <div class = tweet>
+ <h4>コメントする</h4>
+   <% if current_user %>
+      <%= form_tag("/tweets/#{@tweet.id}/comments", method: :post) do %>
+        <textarea name="name" placeholder="名前"></textarea>
+        <textarea name="text" placeholder="コメントする" ></textarea>
+        <input type="submit" value="SEND">
+      <% end %>
+    <% end %>
+</div>
