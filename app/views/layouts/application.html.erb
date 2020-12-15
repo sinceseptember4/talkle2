@@ -9,11 +9,12 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <header class = header>
-<h1>talkle</h1>
+<h1><%=link_to "talkle",root_path,mehod: :get%></h1>
 <% if user_signed_in? %>  
           <div class="btn btn--orange btn--radius">
+             <%= link_to "マイページ", user_path(current_user) %>
             <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-            <%= link_to "投稿する", "/tweet/new", class: "post" %>
+            <%= link_to "投稿する", "/tweets/new", class: "post" %>
           </div>
         <% else %>
           <div class="btn btn--orange btn--radius">
