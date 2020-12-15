@@ -2,7 +2,7 @@
   <span><% @tweets.each do |tweet| %></span>
   <div class = tweet>
       <div class =write >
-        <p><%= tweet.name %>---<%= tweet.created_at%></p>
+        <p><%= tweet.user.nickname%>---<%= tweet.created_at%></p>
         <p><%= tweet.text %>---<%link_to '詳細', "/tweets/#{tweet.id}", mehod: :get%></p>
     </div>
 

@@ -8,7 +8,7 @@ before_action :move_to_index, except: :index
     end
     
     def create
-        Tweet.create(name: tweet_params[:name], text: tweet_params[:text], user_id: current_user.id)
+        Tweet.create( text: tweet_params[:text], user_id: current_user.id)
     end
     def show
         
@@ -35,7 +35,7 @@ before_action :move_to_index, except: :index
     
     private
     def  tweet_params
-        params.permit(:name,:text)
+        params.permit(:text)
     end
     
     
