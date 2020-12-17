@@ -33,8 +33,9 @@ before_action :move_to_index, except: :index
     end
     end
     def search
-    @products = Product.where('title LIKE(?)', "%#{params[:keyword]}%").limit(20)
+    @tweet = Tweet.where('text LIKE(?)', "%#{params[:search]}%").order("created_at DESC").page(params[:page]).per(10)
     end
+
     private
     def  tweet_params
         params.permit(:text)

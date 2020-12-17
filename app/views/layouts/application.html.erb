@@ -9,7 +9,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <header class = header>
-<h1><%=link_to "talkle",root_path,mehod: :get%></h1>
+<h1><%=link_to "talkle",root_path,method: :get%></h1>
+<%= form_tag(search_tweets_path,:method => 'get') do %>
+  <%= text_field_tag :search %>
+  <%= submit_tag 'Search', :name => nil %>
+<% end %>
 <% if user_signed_in? %>  
           <div class="btn btn--orange btn--radius">
              <%= link_to "マイページ", user_path(current_user) %>

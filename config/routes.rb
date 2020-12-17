@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'tweets#index'
-  resources :tweets  do
+  resources :tweets  do 
+    collection do
+      get 'search'
+    end
     resources :comments ,only: [:create,:edit,:update,:destroy]
-  end
+  end   
+  
+  
   resources :users,only: [:show,:edit,:update]
   
 end
