@@ -1,7 +1,7 @@
 class TweetsController < ApplicationController
 before_action :move_to_index, except: :index
     def index
-          @tweets = Tweet.order("created_at DESC")
+          @tweets = Tweet.order("created_at DESC").page(params[:page]).per(10)
     end
     
     def new
@@ -13,7 +13,7 @@ before_action :move_to_index, except: :index
     def show
         
         @tweet = Tweet.find(params[:id])
-        @comments = @tweet.comments.includes(:user)
+        @comments = @tweet.comments.includes(:user).order("created_at DESC").page(params[:page]).per(10)
     end
     def edit
         @tweet = Tweet.find(params[:id])
