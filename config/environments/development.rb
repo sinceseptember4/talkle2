@@ -66,8 +66,8 @@ Rails.application.configure do
     :address => "smtp.gmail.com",
     :port => 587,
     :domain => 'smtp.gmail.com',
-    :user_name => "okayosi94@gmail.com", #先ほど作成した送信用Gmailアドレス
-    :password => "sirokuroorigin", #2段階認証したアカウントで発行したアプリパスワード
+    :user_name => "sinceseptember4@gmail.com", #先ほど作成した送信用Gmailアドレス
+    :password => "mqaoxlzvrxgblnpw", #2段階認証したアカウントで発行したアプリパスワード
     :authentication => 'login'
   }
 end
