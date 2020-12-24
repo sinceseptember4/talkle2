@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'tweets#index'
+    root to: "home#index"
   resources :tweets  do 
     collection do
       get 'search'
