@@ -11,8 +11,6 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 10px 30px 10px 30px;
-
-
 }
 .view {
 background-image: url(https://kenpro-shop.jp/user_data/packages/default/img/category/material/best/sky_02.jpg);
@@ -20,7 +18,7 @@ background-image: url(https://kenpro-shop.jp/user_data/packages/default/img/cate
 }
 .space{
 height: 110px;
-width: 1400px;
+width: auto;
 
 }
 .body {
@@ -32,19 +30,16 @@ justify-content: space-between;
 border: solid 1px black;
 align-items: center;
 height: auto;
-width: 1400px;
+width: auto;
 margin: 10px 10px;
 border-radius: 10px;
 }
 .write{
-width: 1000px;
-margin: 0 20px 0 0;
+width: 98%;
+margin: 0 0 0 20px;
 }
 .menu{
-height: 90PX;
 width: 90px;
-box-sizing: border-box;
-align-items: center;
 }
 
 .lass {
