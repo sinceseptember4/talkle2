@@ -91,7 +91,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-    config.action_mailer.default_url_options = { host: 'https://arcane-spire-07346.herokuapp.com/' }
+    config.action_mailer.default_url_options = { host: 'https://6d509f0e6c924f1bbf37538fc3746efd.vfs.cloud9.ap-northeast-1.amazonaws.com/' }
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
